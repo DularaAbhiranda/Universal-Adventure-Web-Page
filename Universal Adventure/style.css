@@ -1,0 +1,480 @@
+@import url("http");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #006473;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #42a9f9;
+    color: black;
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+}
+
+.star svg{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+h1{
+    color: #0e512a;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffcc00;
+}
+
+h6{
+    color: aliceblue;
+}
+
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.navbar-light .navbar-nav .nav-item :hover,
+.navbar img:hover,
+.navbar-light .navbar-nav .nav-item.active
+.navbar img.active{
+    color:rgb(85, 173, 220);
+}
+
+
+.navbar img{
+    font-size: 1.2rem;
+    padding: 0.7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3 ease;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding : 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#bar:hover,
+#bar:active{
+    color: aliceblue;
+}
+
+#home{
+    background-image: url("images/home.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size:contain ;
+    background-position: top 5px center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.slogan{
+    padding-left: 30px;
+    align-items:flex-end;
+    margin-top: -300px; 
+
+}
+
+#home span{
+    color: rgb(89, 80, 255);
+}
+
+#place{
+    width: 100%;
+    height: 150vh;
+    background-size:contain ;
+    background-position: top 5px center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#place1{
+    width: 100%;
+    height: 20vh;
+    background-size:contain ;
+    background-position: top 5px center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#place2{
+    padding-top:550px ;
+    width: 100%;
+    height: 50vh;
+    background-size:contain ;
+    background-position: top 5px center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 200px;
+}
+
+
+.slogan {
+    margin-bottom: 20px;
+}
+
+.image-row {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-row img {
+    width: 400px;  
+    height: 400px; 
+    object-fit: cover; 
+}
+
+
+footer{
+    background-color: #15332c;
+}
+
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer .copyright a{
+    color: rgb(22, 151, 136);
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover{
+    color: #fff;
+    background-color: #37aec8;
+}
+
+/*Service page css*/
+
+@media (max-width: 768px) {
+    .image-row img {
+        width: 100%; /* Full width on smaller devices */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .btn {
+        margin-top: 20px; /* Ensure spacing around buttons for touch accessibility */
+    }
+}
+
+
+
+/*About page CSS*/
+.intro {
+    background-color: #f8f9fa;  /* Light background for a clean, modern look */
+    padding: 20px;  /* Uniform padding around the section */
+    margin-top: 20px;  /* Margin at the top to separate from any previous content */
+    border-radius: 8px;  /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+}
+
+.intro h3 {
+    color: #0056b3;  /* Dark blue for a professional, thematic appearance */
+    margin-bottom: 10px;  /* Space below the heading */
+}
+
+.intro p {
+    font-size: 1rem;  /* Standard font size for readability */
+    line-height: 1.6;  /* Line height for better text flow */
+    color: #333;  /* Dark grey for improved readability */
+    text-align: justify;  /* Justify text for a polished layout */
+}
+
+.intro img {
+    border-radius: 8px;  /* Rounded corners to match the section styling */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* Shadow for the image for emphasis */
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;  /* Stack image and text vertically on small screens */
+    }
+
+    .intro .col-md-8, .intro .col-md-4 {
+        width: 100%;  /* Full width for both columns to utilize space efficiently */
+    }
+
+    .intro img {
+        margin-top: 15px;  /* Add margin top to the image for space between text and image */
+    }
+}
+
+
+.philosophy {
+    background-color: #f0f4f8; /* Light blue background for a fresh look */
+    padding: 40px 20px; /* Padding for spacing around content */
+    margin: 20px 0; /* Margin for separation from other content */
+    border-left: 5px solid #0056b3; /* Blue border on the left for emphasis */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.philosophy h3 {
+    color: #418ad9; /* Theme color for heading */
+    font-size: 1.75rem; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+}
+
+.philosophy p {
+    font-size: 1rem; /* Readable font size */
+    line-height: 1.6; /* Spacing for readability */
+    color: #333; /* Standard text color for contrast */
+    text-indent: 20px; /* Indent first line of paragraph for classic look */
+}
+
+@media (max-width: 768px) {
+    .philosophy {
+        padding: 20px 10px; /* Smaller padding on smaller screens */
+        text-align: center; /* Center text for better mobile readability */
+    }
+
+    .philosophy h3, .philosophy p {
+        text-align: left; /* Keep text aligned left for readability */
+    }
+}
+
+.team {
+    background-color: #ffffff; /* White background for a clean look */
+    border-left: 5px solid #007bff; /* Accent color border on the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Soft rounded corners */
+    margin-top: 20px; /* Space from the previous section */
+}
+
+.team h3 {
+    color: #4189d6; /* A consistent theme color for headings */
+    margin-bottom: 10px; /* Space between the heading and paragraph */
+}
+
+.team p {
+    font-size: 1rem; /* Ensures text is neither too large nor too small */
+    line-height: 1.6; /* Optimal line height for readability */
+    color: #666; /* Slightly softer color for reading comfort */
+    text-align: justify; /* Justified text for a neat and organized appearance */
+}
+
+.team-email {
+    color: #842ade; /* Theme color for links, matching the border */
+    text-decoration: none; /* No underline to keep it clean */
+}
+
+.team-email:hover {
+    text-decoration: underline; /* Underline on hover for better interaction visibility */
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding: 15px; /* Smaller padding on smaller screens for space efficiency */
+    }
+}
+
+
+.image-section {
+    background-color: #f8f9fa; 
+    margin-top: 20px; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.img-fluid {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/*Contact page css*/
+
+.nav-link.active {
+    color: #007bff;
+}
+
+.contact-info h3, .contact-form h3 {
+    color: #4ecece; /* A distinctive, bright color for headers */
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem; /* Spacing between form elements */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color for buttons */
+    border: none; /* No border for a cleaner look */
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        text-align: center; /* Center navigation links on smaller screens */
+    }
+
+    .contact-info, .contact-form {
+        padding: 0 15px; /* Padding on smaller screens for better readability */
+    }
+
+    .btn-primary {
+        width: 100%; /* Full width button on smaller devices */
+    }
+}
+
+
+/*SignIn page CSS*/
+
+body.signin-body {
+    background-image: url('./images/srback.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-radius: 8px; 
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #0056b3; /* Theme color */
+    border: none; /* Remove default border */
+}
+
+.btn-primary:hover {
+    background-color: #004080; /* Darker on hover */
+}
+
+.register-body {
+    background-image: url('./images/srback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh; /* Ensures the body takes full viewport height */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent for better readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #004080;
+}
+
+
+

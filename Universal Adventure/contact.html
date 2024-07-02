@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Universal Adventure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="content.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signIn.html">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+        <section class="contact-info mb-4">
+            <h3>Our Contact Information</h3>
+            <p><strong>Email:</strong> info@universaladventures.com</p>
+            <p><strong>Phone:</strong> +61 7 7010 1111</p>
+            <p><strong>Address:</strong> GINGHI, New South Wales (NSW), 2849</p>
+        </section>
+
+        <section class="contact-form mb-4">
+            <h3>Send Us a Message</h3>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h6>Universal Adventure</h6>
+                    <p>Most Popular world wide travel website</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h5>Featured</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Travelling</a></li>
+                        <li><a href="#">Document</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h5>Contact Us</h5>
+                    <p>150 Collins Street, Melbourne, VIC 3000, Australia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
